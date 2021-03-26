@@ -1,0 +1,40 @@
+.menu__list {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.menu__item {
+  /* height: 38px;  */
+  margin-right: 8px;
+  background-color: var(--middle-background);
+}
+.menu__item:nth-child(5) {
+  margin-right: 0;
+}
+.menu__btn {
+  padding: 6px 22px;
+  border: none;
+  font-family: inherit;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+  color: var(--light-text);
+  background-color: var(--accent);
+  box-shadow: var(--btn-shadow);
+  }
+}

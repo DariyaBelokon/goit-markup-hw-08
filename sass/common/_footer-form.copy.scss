@@ -1,0 +1,56 @@
+.footer__form {
+  color: var(--light-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+}
+.footer__label {
+  display: block;
+  margin-bottom: 20px;
+  &::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  }
+}
+.footer__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+  padding-left: 16px;
+}
+.footer__mailing {
+  display: flex;
+}
+.btn-send {
+  color: currentColor;
+  background-color: var(--accent);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px var(--background-dark15);
+  border-radius: 4px;
+  padding: 10px 29px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+.btn-send__icon {
+  margin-left: 10px;
+}

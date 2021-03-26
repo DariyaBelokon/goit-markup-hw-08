@@ -1,0 +1,72 @@
+.footer {
+  background-color: var(--background-dark);
+}
+.footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.link-logo--white {
+  color: var(--light-text);
+}
+.footer__address {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  margin-right: 70px;
+  color: var(--light-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer__mail {
+  display: block;
+  margin-bottom: 9px;
+}
+.footer__mail,
+.footer__tel {
+  color: var(--light-text-op60);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-right: 70px;
+}
+.footer__list {
+  display: flex;
+  align-items: baseline;
+}
+.footer__network {
+  margin-right: 93px;
+}
+.footer__buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.footer__join{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--light-text);
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.btn-socials--dark {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--background-footer-icon);
+  color: var(--light-text);
+  padding: 0;
+  margin-right: 10px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+  background-color: var(--accent);
+  color: var(--light-text);
+  }
+}

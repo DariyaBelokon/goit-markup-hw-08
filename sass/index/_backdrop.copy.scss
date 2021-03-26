@@ -1,0 +1,19 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--modal-dark-background);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  /* (Модальное окно можно ещё так спозиционировать, но лучше через position:absolute)
+  display: flex;
+  align-items: center; */
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

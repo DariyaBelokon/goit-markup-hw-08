@@ -1,0 +1,35 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 30px;
+}
+.btn-socials {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--light-background);
+  color: var(--icon-text-color);
+  padding: 0;
+  margin-right: 10px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+  background-color: var(--accent);
+  color: var(--light-text);
+}
+}
+.btn-socials:nth-child(4n) {
+  margin-right: 0;
+}
+
+.btn-socials__icon {
+  fill: currentColor;
+}
