@@ -1164,11 +1164,9 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .team__photo {
-    max-width: 450px;
-    height: 460px;
-  }
+.team__photo {
+  max-width: 450px;
+  height: 460px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1278,6 +1276,12 @@ ul {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .thumb-member {
+    height: 460px;
+  }
 }
 
 .socials {
