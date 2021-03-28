@@ -12,7 +12,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 480px;
+  // max-width: 480px;
+  width: 480px;
   max-height: 796px;
   padding: 48px 40px;
   background-color: var(--light-background);
@@ -85,7 +86,7 @@
   align-items: center;
   justify-content: space-between;
   max-width: 480px;
-  padding: 16px 15px;
+  padding: 10px 15px;
 }
 
 .menu-toggle {
@@ -130,6 +131,10 @@
   &:hover {
   color: var(--accent);
   }
+  @media screen and (min-width: 1200px){
+    display: flex;
+  align-items: center;
+  }
 }
 .contacts__link {
   color: inherit;
@@ -137,17 +142,27 @@
 }
 
 .contacts__icon-letter {
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  /* fill: var(--main-text);  */
+  fill: currentColor;
+  @media  screen and (min-width:1200px) {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  /* fill: var(--main-text);  */
-  fill: currentColor;
+ } 
 }
 .contacts__icon-phone {
   width: 10px;
+  height: 14px;
+  margin-right: 8px;
+  fill: currentColor;
+  @media  screen and (min-width:1200px){
+  width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: currentColor;
+ } 
 }
 .site-nav {
   display: flex;
@@ -177,14 +192,20 @@
     display: flex;
     flex-direction: column;
     margin-left: 84px;
+    font-size: 12px;
+    line-height: 1.167;
   }
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
+    @media screen and (min-width:1200px) {
+      margin-bottom: 0;
+    }
   }
 }
 @media screen and (max-width:1200px) {
   .header__container{
-     margin: 0;
+     margin-top: 0;
+     margin-bottom: 0;
   }
 }
 @media screen and (min-width:1200px) {
@@ -198,6 +219,8 @@
   }
   .contacts {
   display: flex;
+  align-content: center;
+  // align-items: center;
   flex-direction: row;
   margin-left: auto;
   color: var(--main-text);
@@ -217,11 +240,7 @@
   position: relative;
   display: block;
   color: inherit;
-  padding-bottom: 32px;
-  padding-top: 32px
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--accent);
@@ -229,7 +248,7 @@
   &::after {
     position: absolute;
     left: 0;
-    bottom: -30px;
+    bottom: -28px;
     content: '';
     display: block;
     width: 100%;
@@ -239,6 +258,9 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+      bottom: -34px;
+    }
   }
   &:hover::after {
     transform: scaleX(1);
@@ -247,13 +269,13 @@
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
-}
+  }
 .site-nav__link--active {
   color: var(--accent);
   &::after {
     position: absolute;
     left: 0;
-    bottom: -30px;
+    bottom: -34px;
     content: '';
     display: block;
     width: 100%;
@@ -262,7 +284,7 @@
     transform: scaleX(1);
   }
 }
-header__container
+
 @media screen and (min-width: 480px) {
   .header__container {
     max-height: 60px;

@@ -1,35 +1,69 @@
 .hero {
-  color: var(--light-text);
-  background-color: var(--background-dark);
-  background-image: linear-gradient(
-      to right,
-      var(--hero-dark-gradient),
-      var(--hero-dark-gradient)
-    ),
-    url(../images/team.jpg);
-  height: 600px;
+color: var(--light-text);
+background-color: var(--background-dark);
+height: 400px;
+max-width: 1600px;
+background-image: linear-gradient(
+to right,
+var(--hero-dark-gradient),
+ var(--hero-dark-gradient)
+),
+url(../images/team.jpg);
+ margin-left: auto;
+margin-right: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      to right, 
+      rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+      url(../images/team@2x.jpg);
+  }
+
+ @media  screen and (min-width:480px){
+ max-width: 480px;
+}
+@media  screen and (min-width:768px){
+  max-width: 768px;
+ } 
+@media  screen and (min-width:1200px){
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  height: 600px;
+ } 
 }
 .hero__container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+   @media  screen and (min-width:480px){
+ padding: 118px 45px;
+}
+@media  screen and (min-width:768px){
+  padding: 118px 189px;
+ } 
+@media  screen and (min-width:1200px){
+  padding: 200px 237px;
+ } 
 }
 .hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+    
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  padding-left: 237px;
-  padding-right: 237px;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
+
 .order-btn {
   color: currentColor;
   background-color: var(--accent);

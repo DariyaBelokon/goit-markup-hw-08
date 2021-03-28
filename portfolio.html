@@ -15,6 +15,56 @@
 </head>
 <body>
     <header class="header">
+        <div class="container mobile-menu--closed">
+            <a class="link-logo link-logo--mobile" href="#"><span class="link-logo__web">Web</span>Studio</a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="btn-mobile-menu__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#mobile-menu"></use>
+                </svg>
+            </button>
+        </div>
+        
+        
+        <!-- Открытое моб.меню -->
+        <div class="container mobile-menu js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="btn-mobile-menu__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#mobile-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list">
+                <li><a href="#" class="mobile-menu__link mobile-menu__link--active">Студия</a></li>
+                <li><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+                <li><a href="#contacts" class="mobile-menu__link">Контакты</a></li>
+            </ul>
+            <ul class="mobile-contacts-list">
+                <li class="mobile-contacts__item">
+                    <a class="contacts__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="contacts__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+        
+            </ul>
+            <ul class="mibile-socials-list">
+                <li class="mibile-socials-list__item">
+                    <a href="#">Instagram </a>
+                </li>
+                <li class="mibile-socials-list__item"><span>|</span></li>
+                <li class="mibile-socials-list__item">
+                    <a href="#">Twitter </a>
+                </li>
+                <li class="mibile-socials-list__item"><span>|</span></li>
+                <li class="mibile-socials-list__item">
+                    <a href="#">Facebook </a>
+                </li>
+                <li class="mibile-socials-list__item"><span>|</span></li>
+                <li class="mibile-socials-list__item">
+                    <a href="#">LinkedIn </a>
+                </li>
+            </ul>
+        </div>
+
         <nav class="container header__container">
             <a class="link-logo" href="#"><span class="link-logo__web">Web</span>Studio</a>
             <ul class="site-nav">
@@ -45,7 +95,7 @@
         </nav>
     </header>
     <main>
-<section class="menu">
+<section class=" container menu">
     <h1 class="menu__title--visually-hidden">Портфолио</h1>
     <ul class="menu__list">
         <li class="menu__item"><button class="menu__btn">Все</button></li>
@@ -213,50 +263,49 @@
     </main>
 <footer class="footer">
     <div class="container footer__container">
-        <ul class="footer__list">
-            <li>
-                <div class="footer__contacts">
-                    <a class="link-logo link-logo--white" href="#"><span class="link-logo__web">Web</span>Studio</a>
-                    <address id="contacts">
-                        <ul>
-                            <li><a class="footer__address" href="https://goo.gl/maps/QoUvrbmvHfTvnBRbA">г. Киев, пр-т
-                                    Леси Украинки, 26</a>
-                            </li>
-                            <li><a class="footer__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li><a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                        </ul>
-                    </address>
+        <div class="footer__list">
+            <div class="footer__contacts">
+                <a class="footer__logo link-logo link-logo--white" href="#"><span
+                        class="link-logo__web">Web</span>Studio</a>
+                <address id="contacts">
+                    <ul>
+                        <li><a class="footer__address" href="https://goo.gl/maps/QoUvrbmvHfTvnBRbA">г. Киев, пр-т Леси
+                                Украинки, 26</a>
+                        </li>
+                        <li><a class="footer__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__network">
+                <p class="footer__join">ПРИСОЕДИНЯЙТЕСЬ</p>
+                <div class="footer__buttons">
+                    <button class="btn-socials btn-socials--dark">
+                        <svg class="btn-socials__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#instagram"></use>
+                        </svg>
+                    </button>
+                    <button class="btn-socials btn-socials--dark">
+                        <svg class="btn-socials__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#twitter"></use>
+                        </svg>
+                    </button>
+                    <button class="btn-socials btn-socials--dark">
+                        <svg class="btn-socials__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#facebook"></use>
+                        </svg>
+                    </button>
+                    <button class="btn-socials btn-socials--dark">
+                        <svg class="btn-socials__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#linkedin"></use>
+                        </svg>
+                    </button>
                 </div>
-            </li>
-            <li>
-                <div class="footer__network">
-                    <p class="footer__join">ПРИСОЕДИНЯЙТЕСЬ</p>
-                    <div class="footer__buttons">
-                        <button class="btn-socials btn-socials--dark">
-                            <svg class="btn-socials__icon" width="20" height="20">
-                                <use href="./images/sprite.svg#instagram"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-socials btn-socials--dark">
-                            <svg class="btn-socials__icon" width="20" height="20">
-                                <use href="./images/sprite.svg#twitter"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-socials btn-socials--dark">
-                            <svg class="btn-socials__icon" width="20" height="20">
-                                <use href="./images/sprite.svg#facebook"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-socials btn-socials--dark">
-                            <svg class="btn-socials__icon" width="20" height="20">
-                                <use href="./images/sprite.svg#linkedin"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </li>
-            <li>
-            </li>
+            </div>
+        </div>
+
+
+        <div class="footer__join">
             <form class="footer__form">
                 <label class="footer__label" for="email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
                 <div class="footer__mailing">
@@ -268,8 +317,26 @@
                     </button>
                 </div>
             </form>
-        </ul>
-    </div>
+        </div>
 </footer>
+<script src="./js/modal.js"></script>
+<script>
+    (() => {
+        document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}:${value}`),
+                    // console.log(`${key}:${value}`)
+                );
+            });
+    })();
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
