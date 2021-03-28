@@ -1,14 +1,18 @@
 .card__list {
-  @media screen and (min-width: 768px){
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .card__list {
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    margin-bottom: -30px;
   }
 }
 
@@ -20,31 +24,30 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-  box-shadow: var(--item-flex-shadow);
+    box-shadow: var(--item-flex-shadow);
   }
-   @media screen and (min-width: 768px){
-     flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
     margin-right: 30px;
   }
-   @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px){
-.card__content:nth-child(2n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__content:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
-@media screen and (min-width: 1200px){
-.card__content:nth-child(3n) {
-  margin-right: 0;
-}
-.card__content:nth-last-child() {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .card__content:nth-child(3n) {
+    margin-right: 0;
+  }
+  .card__content:nth-last-child() {
+    margin-bottom: 0px;
   }
 }
-
 
 .card__thumb {
   position: relative;
@@ -61,7 +64,7 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
+  transform: translateY(101%);
 }
 .card__content:hover .card__overlay,
 .card__content:focus .card__overlay {
@@ -75,7 +78,6 @@
 }
 .card__text {
   display: block;
-  max-width: 100%;
   position: absolute;
   margin: 0;
   width: 100%;
@@ -85,15 +87,15 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  // padding: 77px 24px;
-  color:white;
+  padding: 77px 24px;
+  color: white;
   font-weight: 400;
-//   @media screen and (min-width: 768px) {
-//  padding: 49px 24px;
-// }
-// @media screen and (min-width: 1200px) {
-//  padding: 63px 24px;
-//  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 .card__info {
   padding: 20px 24px;
@@ -117,10 +119,10 @@
 }
 .card__overlay {
   padding: 77px 24px;
- @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding: 49px 24px;
-}
+  }
   @media screen and (min-width: 1200px) {
-  padding: 63px 24px;
+    padding: 63px 24px;
   }
 }
